@@ -72,7 +72,7 @@ class PatientGlycemieHistory extends Page implements HasTable
     {
         return [
             Select::make('patientId')
-                ->label('Sélectionner un patient')
+                ->label('Sélectionner  un patient')
                 ->options(Patient::all()->pluck('name', 'id'))
                 ->searchable()
                 ->required()
